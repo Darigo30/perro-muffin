@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Imagen Perro vs Muffin</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/brain.js"></script>
+    <!-- CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificación Perro vs Muffin</h1>
+
+        <!-- Input para subir la imagen -->
+        <input type="file" id="upload" accept="image/*">
+
+        <!-- Contenedor donde se mostrará la imagen -->
+        <div>
+            <h2>Imagen Subida:</h2>
+            <img id="uploadedImage" alt="Tu imagen aparecerá aquí">
+        </div>
+
+        <!-- Mostrar el resultado de la predicción -->
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+
+        <canvas id="myCanvas" width="28" height="28" style="display:none;"></canvas>
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
